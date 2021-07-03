@@ -8,7 +8,7 @@ const Main = () => {
   const [height, setHeight] = useState(0);
 
   useEffect(() => {
-    const target = document.querySelector('.window');
+    const target = document.querySelector('.window'); // nullの可能性をどうしたらよいのか
     const targetHeight = target.clientHeight;
     setHeight(targetHeight);
   }, []);
