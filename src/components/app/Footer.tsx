@@ -13,6 +13,6 @@ const Footer: VFC = () => {
 export default Footer;
 
 const Root = styled.div`
-  background: ${colors.backGroundBlack};
+  background: ${colors.backGround};
   color: ${colors.textWhite};
 `;
