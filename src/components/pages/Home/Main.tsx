@@ -8,53 +8,40 @@ const Main = () => {
   const handleChange = (e: any) => {
     setAge(e.target.value);
   };
-  const myArray = [Array(2021)];
-  const res = myArray.reduceRight((arr, last) => {
-    return (arr = arr.concat(last));
+  const ad = [...Array(2021)].map((_, index) => {
+    <option key="index">西暦 {index + 1} 年</option>;
   });
+  const reverseAd = ad.reverse();
+  const dc = [...Array(9999)].map((_, index) => {
+    <option key="index">紀元前 {index + 1}</option>;
+  });
+  const reverseDc = dc.reverse();
+
   return (
     <>
-      <Window style={{ width: 300 }} className="window">
-        <div className="title-bar">
+      <Window className="window">
+        <TitleBar className="title-bar">
           <div className="title-bar-text">How Old Am I?</div>
           <div className="title-bar-controls">
             <button aria-label="Minimize" />
             <button aria-label="Maximize" />
             <button aria-label="Close" />
           </div>
-        </div>
+        </TitleBar>
 
-        <div
-          className="window-body"
-          style={{
-            padding: '0 0 20px',
-          }}
-        >
-          <p
-            style={{
-              textAlign: 'center',
-              margin: '20px 0',
-              fontSize: '15px',
-            }}
-          >
+        <WindowBody className="window-body">
+          <Iam>
             {age === 0 ? '私は何年生まれですか？' : `私は${age}生まれです`}
-          </p>
+          </Iam>
           <div className="field-row" style={{ justifyContent: 'center' }}>
             <select onChange={(e) => handleChange(e)}>
-              {[...Array(2021)].map((_, index) => {
-                const ad = <option key="index">西暦 {index + 1} 年</option>;
-                return ad;
-              })}
+              {reverseAd}
               <option>イエス・キリストの誕生</option>
-              {[...Array(9999)].map((_, index) => {
-                const dc = <option key="index">紀元前 {index + 1}</option>;
-                const reverseDc = [dc].reverse();
-                return reverseDc;
-              })}
+              {reverseDc}
               <option>紀元前10千年紀</option>
             </select>
           </div>
-        </div>
+        </WindowBody>
       </Window>
     </>
   );
@@ -63,5 +50,18 @@ const Main = () => {
 export default Main;
 
 const Window = styled.div`
-  transform: scale(1);
+  width: 90%;
+  max-width: 700px;
+`;
+const WindowBody = styled.div`
+  padding: 0 0 20px;
+`;
+const TitleBar = styled.div`
+  padding: 5px;
+  height: fit-content;
+`;
+const Iam = styled.p`
+  text-align: center;
+  margin: 20px 0;
+  font-size: 15px;
 `;
