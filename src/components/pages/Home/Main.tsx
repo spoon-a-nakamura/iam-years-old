@@ -176,6 +176,9 @@ const FieldRow = styled.div`
 const Select = styled.select`
   font-size: 16px;
   font-weight: normal;
+  height: 1.8em;
+  background-position: center right 2px;
+  background-size: auto 80%;
 `;
 const Option = styled.option``;
 const Confirm = styled.div`
