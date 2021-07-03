@@ -2,7 +2,7 @@ import { VFC } from 'react';
 import Link from 'next/link';
 import styled from '@emotion/styled';
 import { sppx, pcpx, pcfz } from '../../styles/sizes';
-import { fontFamilies } from '../../styles/fonts';
+// import { fontFamilies } from '../../styles/fonts';
 import { mediaQueries } from '../../styles/breakPoints';
 
 type navListsProps = {
@@ -82,7 +82,6 @@ const MenuAnchor = styled.a`
   cursor: pointer;
   font-size: ${pcfz(12)};
   margin-right: ${pcpx(40)};
-  ${fontFamilies.montserratMedium}
   @media ${mediaQueries.sp} {
     margin-right: ${sppx(40)};
   }

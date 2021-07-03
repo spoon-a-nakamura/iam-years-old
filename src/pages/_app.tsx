@@ -2,8 +2,8 @@ import 'ress';
 import { NextPage } from 'next';
 import { AppProps } from 'next/app';
 import { css, Global } from '@emotion/react';
-import { fontFace } from '../styles/fonts';
-import { fontFamilies } from '../styles/fonts';
+// import { fontFace } from '../styles/fonts';
+// import { fontFamilies } from '../styles/fonts';
 import React from 'react';
 import Head from 'next/head';
 import { colors, useCustomVhProperty } from '../styles/utils';
@@ -67,8 +67,6 @@ const App: NextPage<AppProps> = ({ Component, pageProps }) => {
 export default App;
 
 const globalStyle = css`
-  ${fontFace};
-
   html,
   body {
     font-size: 16px;
@@ -77,7 +75,6 @@ const globalStyle = css`
     text-size-adjust: 100%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans',
       'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
-    ${fontFamilies.a1MinStdBold}
   }
 
   #__next {

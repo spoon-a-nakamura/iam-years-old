@@ -31,8 +31,6 @@ type RootProps = {
 const Root = styled.div<RootProps>`
   height: ${({ height }) => height}px;
   width: 100%;
-  background: url(/assets/images/pages/Container/bg.jpg) center / cover
-    no-repeat;
   overflow: hidden;
   display: flex;
   justify-content: center;
