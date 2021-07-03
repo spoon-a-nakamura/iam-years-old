@@ -173,7 +173,10 @@ const Iam = styled.p`
 const FieldRow = styled.div`
   justify-content: center;
 `;
-const Select = styled.select``;
+const Select = styled.select`
+  font-size: 16px;
+  font-weight: normal;
+`;
 const Option = styled.option``;
 const Confirm = styled.div`
   width: 85%;

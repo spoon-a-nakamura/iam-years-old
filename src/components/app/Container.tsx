@@ -34,10 +34,8 @@ const Root = styled.div<RootProps>`
   background: url(/assets/images/pages/Container/bg.jpg) center / cover
     no-repeat;
   background: #7a8fb6;
-  position: fixed;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 10vh;
 `;
