@@ -73,7 +73,7 @@ const globalStyle = css`
   body {
     font-size: 16px;
     color: ${colors.textBlack};
-    background: ${colors.backGroundWhite};
+    background: ${colors.backGround};
     text-size-adjust: 100%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans',
       'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;

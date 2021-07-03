@@ -28,6 +28,5 @@ export const easings = {
 export const colors = {
   textWhite: '#fff',
   textBlack: '#232825',
-  backGroundWhite: '#faf9f0',
-  backGroundBlack: '#262624',
+  backGround: '#7a8fb6',
 } as const;
