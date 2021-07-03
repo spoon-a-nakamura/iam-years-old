@@ -21,9 +21,9 @@ const App: NextPage<AppProps> = ({ Component, pageProps }) => {
         <meta name="theme-color" content="#eee" />
         <meta name="robots" content="index,follow" />
         <meta name="author" content="Wacoal" />
-        <title>Yue | Wacoal</title>
-        <meta name="description" content="Yue | Wacoal" />
-        <link rel="canonical" href="https://yue-japan.com/" />
+        <title>I am hogehoge years old.</title>
+        <meta name="description" content="I am hogehoge years old." />
+        <link rel="canonical" href="https://iam-years-old.vercel.app/" />
         <link
           rel="shortcut icon"
           href="/assets/images/meta/favicon.png"
@@ -33,14 +33,14 @@ const App: NextPage<AppProps> = ({ Component, pageProps }) => {
           rel="apple-touch-icon"
           href="/assets/images/meta/app-touch-icon.png"
         />
-        <meta property="og:site_name" content="Yue" />
-        <meta property="og:title" content="Yue" />
+        <meta property="og:site_name" content="I am hogehoge years old." />
+        <meta property="og:title" content="I am hogehoge years old." />
         <meta
           property="og:image"
-          content="https://yue-japan.com/assets/images/meta/ogimg.jpg"
+          content="https://iam-years-old.vercel.app/assets/images/meta/ogimg.jpg"
         />
-        <meta property="og:description" content="Yue" />
-        <meta property="og:url" content="https://yue-japan.com/" />
+        <meta property="og:description" content="I am hogehoge years old." />
+        <meta property="og:url" content="https://iam-years-old.vercel.app/" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="ja_JP" />
         <meta name="twitter:card" content="summary_large_image" />

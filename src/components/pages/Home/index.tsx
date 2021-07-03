@@ -7,8 +7,8 @@ import Main from '../../pages/Home/Main';
 const Home: VFC = () => (
   <>
     <Meta
-      title="HOW OLD AM I ?"
-      description="HOW OLD AM I ?"
+      title="I am hogehoge years old."
+      description="I am hogehoge years old."
       ogType="website"
     />
     <Root>
