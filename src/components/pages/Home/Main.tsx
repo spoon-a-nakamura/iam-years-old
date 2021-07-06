@@ -51,8 +51,17 @@ const Main = () => {
     return <Option key={index}>{index}年</Option>;
   });
   const reverseAd = ad.reverse();
-  const dc = [...Array(999999)].map((_, index) => {
+  const dc = [...Array(999)].map((_, index) => {
     return <Option key={index}>紀元前{index + 1}年</Option>;
+  });
+  const dc2 = [...Array(999)].map((_, index) => {
+    return <Option key={index}>紀元前{index + 999}年</Option>;
+  });
+  const dc3 = [...Array(999)].map((_, index) => {
+    return <Option key={index}>紀元前{index + 999 * 2}年</Option>;
+  });
+  const dc4 = [...Array(999)].map((_, index) => {
+    return <Option key={index}>紀元前{index + 999 * 3}年</Option>;
   });
   // const dcThousands = [...Array(99)].map((_, index) => {
   //   return <Option key={index}>紀元前{index + 1},000年</Option>;
@@ -95,6 +104,9 @@ const Main = () => {
               <Option>-</Option>
               {reverseAd}
               {dc}
+              {dc2}
+              {dc3}
+              {dc4}
               {/* {dcThousands} */}
               {/* {tenThousands} */}
               {million}
